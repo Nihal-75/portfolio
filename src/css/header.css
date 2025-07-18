@@ -1,0 +1,107 @@
+.header-home{
+    overflow: hidden;
+    padding: 20px 0;
+}
+.header-card{
+    height: 30vmin;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    border-radius: 10px;
+    animation: fadeIn2 1s linear;
+    border: 1px dashed black;
+}
+.header-card-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 1s linear;
+
+}
+.header-card-img img{
+ height:25vmin;
+ width: 25vmin;
+ border-radius: 50%;
+}
+
+.header-content-name{
+    width: 100%;
+    overflow: scroll;
+    padding: 20px;
+
+}
+.header-content-name p{
+    word-break:keep-all;
+    line-height: 23px;
+}
+.shivam-pic{
+    width: 70vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+.shivam-pic h4{
+    font-size: 3.5vmin;
+}
+.header-content-name button{
+    width: 20vmin;
+    padding: 13px;
+    margin: 7px 10px;
+    border: none;
+    background: blue;
+    border-radius: 7px;
+}
+
+
+@media (max-width:750px) {
+    .header-card{
+        flex-wrap: wrap;
+        height: 230px;
+        overflow: scroll;
+    }
+    .header-content-name{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+    }
+   
+    .header-content-name button{
+        width: 40vmin;
+        margin: 10px 0;
+    }
+    .shivam-pic{
+        width: 90vmin;
+
+    }
+    .shivam-pic h4{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .shivam-pic img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-120px);
+    }    
+}
+@keyframes fadeIn2 {
+    from{
+        opacity: 0;
+        transform: translatex(-120px);
+    }    
+}

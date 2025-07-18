@@ -1,0 +1,128 @@
+.contact {
+ /* border: 1px solid black; */
+  overflow: hidden;
+  height: 100vh;
+  padding: 30px 0;
+}
+
+.contacth1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-header-content {
+  margin-top: 70px;
+  animation: fadeIn2 1s linear;
+
+}
+.contact-header-content h1 {
+  text-align: center;
+  font-size: 5.3vmin;
+  animation: fadeIn2 1s linear;
+}
+.contact-header-content p {
+  text-align: center;
+  font-size: 3.3vmin;
+  padding: 10px 0;
+}
+.contact-imgs {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation: fadeIn2 1s linear;
+
+}
+.contact-img-contents {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  gap: 1px;
+}
+.contact-img-contents p {
+  padding: 10px;
+}
+.contact-icons {
+  font-size: 30px;
+  color: black;
+}
+.contact-email {
+  height: 280px;
+}
+.contact-email-input {
+  /* box-shadow: 10px 10px 20px #bcbcbc, -10px -10px 20px rgb(238, 233, 233); */
+     border: 3px dashed rgba(137, 132, 132, 1);
+
+  border-radius: 10px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 70vmin;
+  margin: auto;
+  padding: 10px;
+  animation: fadeIn2 1s linear;
+}
+.contact-email-input input {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid black;
+  
+  outline: none;
+}
+.contact-email-input button {
+  width: 80%;
+  margin: auto;
+  padding: 13px;
+  border-radius: 7px;
+  background: none;
+  background-color: blue;
+  outline: none;
+  border: none;
+}
+.contact-email-input button:active{
+  background-color: green;
+}
+.contact-email-input textarea {
+  resize: none;
+  height: 120px;
+  width: 80%;
+  margin: auto;
+  border-radius: 7px;
+  padding: 10px;
+  background: none;
+}
+
+input {
+  outline: none;
+}
+@media (max-width: 750px) {
+  .contact {
+    height: 100%;
+  }
+  .contacth1 {
+    margin: 0px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .contact-header-content {
+    margin: 15px;
+    padding: 0;
+  }
+  .contact-img-contents {
+    font-size: 3vmin;
+    width: 50px;
+    margin: -10px 0;
+  }
+  .contact-email-input {
+    width: 90vmin;
+  }
+ 
+}
