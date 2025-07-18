@@ -53,7 +53,7 @@ const Contact = () => {
       </div>
       <div className="contact-imgs">
         <FaLocationDot className="contact-icons" />
-        <NavLink to="https://github.com/Shivam-75">
+        <NavLink to="https://github.com/Nihal-75">
           <FaGithub className="contact-icons" />
         </NavLink>
         <NavLink to="">
