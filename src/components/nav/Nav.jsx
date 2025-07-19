@@ -10,6 +10,13 @@ import { FaRProject } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
 const Nav = () => {
+  const link = document.createElement("a");
+  link.href = "/NihalPandeyResume.pdf";
+  link.download = "/NihalPandeyResume.pdf";
+  document.body.append(link);
+  link.click();
+  document.body.removeChild(link);
+
   return (
     <header className="navbar">
       <aside className="navbar-aside">
@@ -45,6 +52,12 @@ const Nav = () => {
               Project
             </div>
           </NavLink>
+          <NavLink className="navlink">
+            <div className="ss-nav">
+              <FaRProject />
+              Resume
+            </div>
+          </NavLink>
         </div>
       </aside>
       <div className="nav-outlet">
@@ -55,5 +68,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-
