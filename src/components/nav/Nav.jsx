@@ -12,8 +12,8 @@ import { FaFileDownload } from "react-icons/fa";
 const Nav = () => {
   const link = document.createElement("a");
   link.href = "/NihalPandeyResume.pdf";
-  link.download = "/NihalPandeyResume.pdf";
-  document.body.append(link);
+  link.download = "NihalPandeyResume.pdf";
+  document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 
